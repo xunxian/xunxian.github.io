@@ -19,4 +19,9 @@
  - 安装完成后，随便新建一个word文件，系统提示需要激活，输入序列号【百度】，确定。
  - 下载KMS 2016激活工具，激活。
 
-## 阿里云短信服务
+## JVM年轻代、老年代、持久代、GC
+      http://blog.csdn.net/yrpting/article/details/52859721
+
+## HTTPS网站证书不安全问题--未验证
+
+      http://blog.csdn.net/lg_lin/article/details/49781975
