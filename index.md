@@ -25,3 +25,6 @@
 ## HTTPS网站证书不安全问题--未验证
 
       http://blog.csdn.net/lg_lin/article/details/49781975
+
+## JVM性能监控与故障处理命令汇总
+      http://www.cnblogs.com/Vince-blogs/p/8484917.html?utm_source=gold_browser_extension
