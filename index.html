@@ -38,5 +38,33 @@
 <h2>su和su - 的区别</h2>
 <pre class="editor-colors lang-text"><span class="syntax--text syntax--plain"><span>  </span><span class="syntax--meta syntax--paragraph syntax--text"><span class="syntax--markup syntax--underline syntax--link syntax--http syntax--hyperlink"><span>在用命令"su"的时候只是切换到root，但没有把root的环境变量传过去，还是当前用户的环境变量，用"su -"命令将环境变量也一起带过去，就象和root登录一样)</span></span></span></span>
 </pre> 
-  </body>
+    <pre class="editor-colors lang-text">
+        <span class="syntax--text syntax--plain">
+            <span></span>
+            <span class="syntax--meta syntax--paragraph syntax--text">
+                <span class="syntax--markup syntax--underline syntax--link syntax--http syntax--hyperlink">
+                    <span>在用命令"su"的时候只是切换到root，但没有把root的环境变量传过去，还是当前用户的环境变量，用"su -"命令将环境变量也一起带过去，就象和root登录一样)</span>
+                </span>
+            </span>
+        </span>
+    </pre>
+    
+    <pre class="editor-colors lang-text">
+        <span class="syntax--text syntax--plain">
+            <span></span>
+            <span class="syntax--meta syntax--paragraph syntax--text">
+                <span class="syntax--markup syntax--underline syntax--link syntax--http syntax--hyperlink">
+                    <span>修改老堡垒机ssh秘钥密码
+1、上传key.pem秘钥到Linux主机
+2、chmod 600 key.pem
+3、ssh-keygen -p -f key.pem 
+输入旧密码之后，输入新密码。
+下面步骤可省略
+4、ssh-keygen -e -f key.pem >> key.pem.pub
+</span>
+                </span>
+            </span>
+        </span>
+    </pre>
+</body>
 </html>
