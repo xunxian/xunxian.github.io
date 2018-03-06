@@ -48,20 +48,22 @@
             </span>
         </span>
     </pre>
-    
+    <h2>修改老堡垒机ssh秘钥密码</h2>
     <pre class="editor-colors lang-text">
         <span class="syntax--text syntax--plain">
             <span></span>
             <span class="syntax--meta syntax--paragraph syntax--text">
                 <span class="syntax--markup syntax--underline syntax--link syntax--http syntax--hyperlink">
-                    <span>修改老堡垒机ssh秘钥密码
-1、上传key.pem秘钥到Linux主机
-2、chmod 600 key.pem
-3、ssh-keygen -p -f key.pem 
-输入旧密码之后，输入新密码。
-下面步骤可省略
-4、ssh-keygen -e -f key.pem >> key.pem.pub
-</span>
+                    <span>
+                      <ol>
+                          <li>上传key.pem秘钥到Linux主机</li>
+                          <li>chmod 600 key.pem</li>
+                          <li>ssh-keygen -p -f key.pem </li>
+                          <li>输入旧密码之后，输入新密码。</li>
+                          <li>下面步骤可省略</li>
+                          <li>ssh-keygen -e -f key.pem >> key.pem.pub</li>
+                      </ol>
+                    </span>
                 </span>
             </span>
         </span>
