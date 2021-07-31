@@ -1,72 +1,88 @@
-<!DOCTYPE html>
-<html>
-  <head>
-      <meta charset="utf-8" />
-      <title>index</title>
-  </head>
-  <body class='markdown-preview'><h1>运维小站</h1>
+<h1>运维小站</h1>
+
 <h2>VMWare虚拟化</h2>
-<ul>
-<li>RAID磁盘阵列</li>
-<li>安装EXIS 6.0系统</li>
-<li>使用VMware vSphere Client登录</li>
-<li>点击【配置】【已获取许可的功能】【编辑】【输入许可秘钥】</li>
-<li>点击【配置】【硬件的高级设置】【配置直通】【勾选带USB的选项】</li>
-<li>【配置】【软件框下的虚拟机启动/关机】设置开机自启动</li>
-</ul>
-<hr>
+
+<ul><li>RAID磁盘阵列</li><li>安装EXIS 6.0系统</li><li>使用VMware vSphere Client登录</li><li>点击【配置】【已获取许可的功能】【编辑】【输入许可秘钥】</li><li>点击【配置】【硬件的高级设置】【配置直通】【勾选带USB的选项】</li><li>【配置】【软件框下的虚拟机启动/关机】设置开机自启动</li></ul>
+
+<hr/>
+
 <h2>Win 10 安装Office 2016增强版</h2>
-<ul>
-<li>下载ISO文件：<a href="http://www.jb51.net/softs/566710.html">http://www.jb51.net/softs/566710.html</a></li>
-<li>下载完成后后使用7-zip等工具解压</li>
-<li>点击setup.exe安装</li>
-<li>安装完成后，随便新建一个word文件，系统提示需要激活，输入序列号【百度】，确定。</li>
-<li>下载KMS 2016激活工具，激活。</li>
-</ul>
+
+<ul><li>下载ISO文件：http://www.jb51.net/softs/566710.html</li><li>下载完成后后使用7-zip等工具解压</li><li>点击setup.exe安装</li><li>安装完成后，随便新建一个word文件，系统提示需要激活，输入序列号【百度】，确定。</li><li>下载KMS 2016激活工具，激活。</li></ul>
+
 <h2>JVM年轻代、老年代、持久代、GC</h2>
-<pre class="editor-colors lang-text"><span class="syntax--text syntax--plain"><span>  </span><span class="syntax--meta syntax--paragraph syntax--text"><span class="syntax--markup syntax--underline syntax--link syntax--http syntax--hyperlink"><span>http://blog.csdn.net/yrpting/article/details/52859721</span></span></span></span>
-</pre>
-<h2>HTTPS网站证书不安全问题–未验证</h2>
-<pre class="editor-colors lang-text"><span class="syntax--text syntax--plain"><span>  </span><span class="syntax--meta syntax--paragraph syntax--text"><span class="syntax--markup syntax--underline syntax--link syntax--http syntax--hyperlink"><span>http://blog.csdn.net/lg_lin/article/details/49781975</span></span></span></span>
-</pre>
+
+<pre><code>  http://blog.csdn.net/yrpting/article/details/52859721</code></pre>
+
+<h2>HTTPS网站证书不安全问题--未验证</h2>
+
+<pre><code>  http://blog.csdn.net/lg_lin/article/details/49781975</code></pre>
+
 <h2>JVM性能监控与故障处理命令汇总</h2>
-<pre class="editor-colors lang-text"><span class="syntax--text syntax--plain"><span>  </span><span class="syntax--meta syntax--paragraph syntax--text"><span class="syntax--markup syntax--underline syntax--link syntax--http syntax--hyperlink"><span>http://www.cnblogs.com/Vince-blogs/p/8484917.html?utm_source=gold_browser_extension</span></span></span></span>
-</pre>
-<h2>NodeJS PM2日常使用详解</h2>
-<pre class="editor-colors lang-text"><span class="syntax--text syntax--plain"><span>  </span><span class="syntax--meta syntax--paragraph syntax--text"><span class="syntax--markup syntax--underline syntax--link syntax--http syntax--hyperlink"><span>http://blog.csdn.net/uikoo9/article/details/79018750</span></span></span></span>
-</pre> 
-<h2>su和su - 的区别</h2>
-<pre class="editor-colors lang-text"><span class="syntax--text syntax--plain"><span>  </span><span class="syntax--meta syntax--paragraph syntax--text"><span class="syntax--markup syntax--underline syntax--link syntax--http syntax--hyperlink"><span>在用命令"su"的时候只是切换到root，但没有把root的环境变量传过去，还是当前用户的环境变量，用"su -"命令将环境变量也一起带过去，就象和root登录一样)</span></span></span></span>
-</pre> 
-    <pre class="editor-colors lang-text">
-        <span class="syntax--text syntax--plain">
-            <span></span>
-            <span class="syntax--meta syntax--paragraph syntax--text">
-                <span class="syntax--markup syntax--underline syntax--link syntax--http syntax--hyperlink">
-                    <span>在用命令"su"的时候只是切换到root，但没有把root的环境变量传过去，还是当前用户的环境变量，用"su -"命令将环境变量也一起带过去，就象和root登录一样)</span>
-                </span>
-            </span>
-        </span>
-    </pre>
-    <h2>修改老堡垒机ssh秘钥密码</h2>
-    <pre class="editor-colors lang-text">
-        <span class="syntax--text syntax--plain">
-            <span></span>
-            <span class="syntax--meta syntax--paragraph syntax--text">
-                <span class="syntax--markup syntax--underline syntax--link syntax--http syntax--hyperlink">
-                    <span>
-                      <ol>
-                          <li>上传key.pem秘钥到Linux主机</li>
-                          <li>chmod 600 key.pem</li>
-                          <li>ssh-keygen -p -f key.pem </li>
-                          <li>输入旧密码之后，输入新密码。</li>
-                          <li>下面步骤可省略</li>
-                          <li>ssh-keygen -e -f key.pem >> key.pem.pub</li>
-                      </ol>
-                    </span>
-                </span>
-            </span>
-        </span>
-    </pre>
-</body>
-</html>
+
+<pre><code>  http://www.cnblogs.com/Vince-blogs/p/8484917.html?utm_source=gold_browser_extension</code></pre>
+
+<h1>初始化CentOS7</h1>
+
+<h1>关闭SELinux</h1>
+
+<p>永久关闭：vi /etc/selinux/config，修改SELINUX=disabled，保存退出后重启服务器。
+临时关闭：setenforce 0
+临时开启：setenforce 1
+查看状态：getenforce</p>
+
+<h1>修改时区</h1>
+
+<p>ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</p>
+
+<h1>关闭Firewalld</h1>
+
+<p>systemctl stop firewalld &amp;&amp; systemctl disable firewalld</p>
+
+<h1>使用阿里云yum源</h1>
+
+<p>mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+yum install wget -y
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+yum clean all
+yum makecache</p>
+
+<h1>安装基本组件</h1>
+
+<p>yum install -y net-tools wget lsof lrzsz ntpdate unzip gunizp -y</p>
+
+<h1>创建个人管理员用户</h1>
+
+<h1>添加用户，给予wheel组成员管理员权限</h1>
+
+<p>1、useradd -m -c “My Admin user” fangsh
+2、passwd fangsh
+3、usermod -aG wheel fangsh</p>
+
+<h1>彻底删除用户</h1>
+
+<p>userdel -rf fangs</p>
+
+<h1>将用户从组里移除</h1>
+
+<p>id fangsh
+gpasswd -d fangsh wheel</p>
+
+<h1>禁止root用户远程登录</h1>
+
+<p>sed -i &#39;s/#PermitRootLogin yes/PermitRootLogin no/g&#39; /etc/ssh/sshd_config
+systemctl restart sshd
+备注：可以使用sudo -i的方式登录，也可以使用su - root登录
+vi /etc/passwd，将root账号的bash修改成nologin之后，sudo -i和su - root都无法登录</p>
+
+<h1>安装Nginx</h1>
+
+<p>sudo yum install gcc-c++
+sudo yum install pcre pcre-devel
+sudo yum install zlib zlib-devel
+sudo yum install openssl openssl-devel
+wget下载nginx源码包后解压编译
+./configure --prefix=/opt/nginx
+make &amp;&amp; make install
+配置开机自启脚本
+<img alt="image" src="https://user-images.githubusercontent.com/16450152/127734864-80e15c69-904f-4d9d-a830-cfda518cb967.png"/></p>
